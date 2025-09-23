@@ -1,0 +1,55 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main() {
+    int choice, qty;
+    float total = 0;
+
+    printf("========== Welcome to Coffee Corner ==========\n");
+    printf("Menu:\n");
+    printf("1. Espresso   - ₹100\n");
+    printf("2. Cappuccino - ₹120\n");
+    printf("3. Latte      - ₹150\n");
+    printf("4. Mocha      - ₹180\n");
+    printf("=============================================\n");
+
+    printf("Enter your choice (1-4): ");
+    scanf("%d", &choice);
+
+    printf("Enter quantity: ");
+    scanf("%d", &qty);
+
+    switch(choice) {
+        case 1:
+            total = qty * 100;
+            printf("You ordered %d Espresso(s)\n", qty);
+            break;
+        case 2:
+            total = qty * 120;
+            printf("You ordered %d Cappuccino(s)\n", qty);
+            break;
+        case 3:
+            total = qty * 150;
+            printf("You ordered %d Latte(s)\n", qty);
+            break;
+        case 4:
+            total = qty * 180;
+            printf("You ordered %d Mocha(s)\n", qty);
+            break;
+        default:
+            printf("Invalid choice!\n");
+            return 0;
+    }
+
+    printf("Total Bill: ₹%.2f\n", total);
+    printf("Thank you! Please visit again ☕\n");
+
+    return 0;
+}
