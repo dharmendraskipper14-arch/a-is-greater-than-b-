@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main ()
+
+int a, b, c, d, e, Average, Percentage",
+
+Printf ("Enter any five subjects marks");
+
+Scanf("%d %d %d %d %d, &a, &b, &c, &d, &e);
+
+Average=a+b+c+d+e/5;
+
+Percentage = (Obtained masks/500)*100;
+
+Printf ("Addition = %d\n", Average);
+Printf ("Percentage = %d\n", Percentage);
+return 0;
+}
+
