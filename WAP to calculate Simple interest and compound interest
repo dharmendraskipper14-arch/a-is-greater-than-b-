@@ -1,1 +1,17 @@
-Programs
+
+
+#include <stdio.h>
+
+int main(){
+
+float p;
+int r;
+int t;
+
+printf("The value of simple interest is %f", (p*r*t)/100);
+scanf("%f%d%d",p,r,t);
+
+printf("The value of of Compound intersest is %f",((P*(pow*(1+r/100),t)-p));
+scanf("%f%d%d",p,r,t);
+return 0;
+}
