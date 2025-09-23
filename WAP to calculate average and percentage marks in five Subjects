@@ -1,19 +1,36 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main ()
-{
-int a, b, c, d, e, Average, Percentage",
+int main() {
+    float maths, physics, pps, evs, ee;
+    float total, average, percentage;
 
-Printf ("Enter any five subjects marks");
 
-Scanf("%d %d %d %d %d, &a, &b, &c, &d, &e);
+    printf("Enter marks for Mathematics: ");
+    scanf("%f", &maths);
 
-Average=a+b+c+d+e/5;
+    printf("Enter marks for Physics: ");
+    scanf("%f", &physics);
 
-Percentage = (Obtained masks/500)*100;
+    printf("Enter marks for PPS: ");
+    scanf("%f", &pps);
 
-Printf ("Addition = %d\n", Average);
-Printf ("Percentage = %d\n", Percentage);
-return 0;
+    printf("Enter marks for EVS: ");
+    scanf("%f", &evs);
+
+    printf("Enter marks for EE: ");
+    scanf("%f", &ee);
+
+  
+    total = maths + physics + pps + evs + ee;
+
+    average = total / 5.0;
+
+    percentage = (total / 500.0) * 100;
+
+    printf("Total Marks: %.2f\n", total);
+    printf("Average Marks: %.2f\n", average);
+    printf("Percentage: %.2f%%\n", percentage);
+
+    return 0;
 }
 
