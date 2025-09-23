@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main ()
-
+{
 int a, b, c, d, e, Average, Percentage",
 
 Printf ("Enter any five subjects marks");
