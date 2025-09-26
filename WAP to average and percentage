@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    float maths, physics, electrical_eng, environmental_eng, graphics;
+    float total_marks, average_marks, percentage;
+
+    printf("Enter marks for Maths: ");
+    scanf("%f", &maths);
+
+    printf("Enter marks for Physics: ");
+    scanf("%f", &physics);
+
+    printf("Enter marks for Electrical Engineering: ");
+    scanf("%f", &electrical_eng);
+
+    printf("Enter marks for Environmental Engineering: ");
+    scanf("%f", &environmental_eng);
+
+    printf("Enter marks for Graphics: ");
+    scanf("%f", &graphics);
+
+    total_marks = maths + physics + electrical_eng + environmental_eng + graphics;
+    average_marks = total_marks / 5.0;
+    percentage = (total_marks / 500.0) * 100.0; // Assuming maximum 100 marks per subject
+
+    printf("\nTotal Marks: %.2f\n", total_marks);
+    printf("Average Marks: %.2f\n", average_marks);
+    printf("Percentage: %.2f%%\n", percentage);
+
+    return 0;
+}
