@@ -42,7 +42,7 @@ int main() {
     }
 
     printf("Total Bill: ₹%.2f\n", total);
-    printf("Thank you! Please visit again ☕\n");
+    printf("Thank you! Please visit again\n");
 
     return 0;
 }
