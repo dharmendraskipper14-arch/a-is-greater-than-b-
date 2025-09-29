@@ -21,7 +21,7 @@ int main() {
 
     total_marks = maths + physics + electrical_eng + environmental_eng + graphics;
     average_marks = total_marks / 5.0;
-    percentage = (total_marks / 500.0) * 100.0; // Assuming maximum 100 marks per subject
+    percentage = (total_marks / 500.0) * 100.0; 
 
     printf("\nTotal Marks: %.2f\n", total_marks);
     printf("Average Marks: %.2f\n", average_marks);
